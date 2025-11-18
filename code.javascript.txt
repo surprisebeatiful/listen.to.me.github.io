@@ -1,0 +1,12 @@
+function nextStep(step) {
+    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+    document.getElementById('step' + step).classList.add('active');
+}
+
+// Add sparkles animation on final step
+document.addEventListener('DOMContentLoaded', () => {
+    const sparkles = document.querySelector('.sparkles');
+    if (sparkles) {
+        sparkles.style.animation = 'twinkle 2s infinite';
+    }
+});

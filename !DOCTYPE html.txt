@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Surprise for Aarushi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center">
+        <div id="step1" class="step active">
+            <h1 class="title">A Magical Surprise Awaits!</h1>
+            <p class="subtitle">Click below to begin your princess adventure.</p>
+            <button class="btn btn-primary sparkle-btn" onclick="nextStep(2)">Start the Surprise</button>
+        </div>
+        
+        <div id="step2" class="step">
+            <h2 class="question">What do princesses love most?</h2>
+            <p class="hint">Hint: It's something that makes them feel special and loved!</p>
+            <button class="btn btn-secondary" onclick="nextStep(3)">Reveal the Answer</button>
+        </div>
+        
+        <div id="step3" class="step">
+            <h3 class="story">Once upon a time, there was a little princess named Aarushi...</h3>
+            <p>She had a heart full of wonder, a smile that lit up the world, and dreams as big as castles. Today, on Children's Day, we celebrate her magic!</p>
+            <button class="btn btn-success" onclick="nextStep(4)">Continue to the Heartfelt Message</button>
+        </div>
+        
+        <div id="step4" class="step">
+            <div class="princess-message">
+                <img src="https://via.placeholder.com/100x100?text=👑" alt="Crown" class="crown">
+                <h2>Happy Children's Day, Princess Aarushi!</h2>
+                <p>You are the most wonderful girl in the world—kind, brave, and full of joy. May your day be filled with laughter, love, and all the sparkles a princess deserves. You mean the world to me, and I'm so proud of you!</p>
+                <p class="signature">With all my love,<br>Dad</p> <!-- Replace "Dad" with your name -->
+            </div>
+            <div class="sparkles"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
